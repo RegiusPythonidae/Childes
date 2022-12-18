@@ -4,6 +4,13 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1300px) {
+  .container {
+    width: 98%;
+    min-width: 950px;
+  }
+}
+
 %wrapper {
   display: grid;
   grid-template-columns: 10% 90%;
@@ -63,4 +70,23 @@
     width: 100%;
     border: 1px solid $clr-darkgrey;
   }
+}
+
+.cha-file-container {
+    display: grid;
+    grid-template-rows: 450px auto;
+}
+
+.aside.files {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-height: 450px;
+}
+
+.aside.video {
+    margin-top: 7px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
